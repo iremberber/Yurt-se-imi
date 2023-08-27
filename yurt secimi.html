@@ -1,128 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" type="text/css" href="yurt secimi.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evet/Hayır Sayacı</title>
+<link rel="stylesheet" href="yurt secimi.css">
 </head>
 <body>
-
-    <div id="baslik">
-        <h1 id="Header"> Yurt Seçimi</h1>
-    </div>
-
+  <h1>Senin İçin Bu Yurt Uygun Mu?</h1>
+  <button id="startButton">Başla</button>
+  <div id="tableContainer" class="hidden">
     <table>
 
         <colgroup>
-            <col style="width: 70%;">
-            <col style="width: 15%;">
-            <col style="width: 15%;">
+            <col style="width: 60%;">
+            <col style="width: 40%;">
         </colgroup>
 
-        <tr>
+        <thead>
+          <tr>
+            <th>Sorular</th>
+            <th>Evet/Hayır</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <tr>
             <td>Temizlik kurum tarafından düzenli yapılıyor.</td>
-            <td>Satır 1, Sütun 2</td>
-            <td>Satır 1, Sütun 3</td>
-        </tr>
+            <td>
+              <input type="radio" name="answer_1" value="evet" id="evet"> 
+              <input type="radio" name="answer_1" value="hayir" id="hayır"> 
+            </td>
+          </tr>
 
-        <tr>
+          <tr>
             <td>Çamaşır makinesi yeterli sayıda.</td>
-            <td>Satır 2, Sütun 2</td>
-            <td>Satır 2, Sütun 3</td>
-        </tr>
+            <td>
+              <input type="radio" name="answer_2" value="evet" id="evet"> 
+              <input type="radio" name="answer_2" value="hayir" id="hayır"> 
+            </td>
+          </tr>
 
-        <tr>
+          <tr>
             <td>Çamaşır makinesi kullanımı ücretsiz.</td>
-            <td>Satır 1, Sütun 2</td>
-            <td>Satır 1, Sütun 3</td>
-        </tr>
+            <td>
+              <input type="radio" name="answer_3" value="evet" id="evet"> 
+              <input type="radio" name="answer_3" value="hayir" id="hayır"> 
+            </td>
+          </tr>
 
-        <tr>
+          <tr>
             <td>Odalarda buzdolabı var.</td>
-            <td>Satır 2, Sütun 2</td>
-            <td>Satır 2, Sütun 3</td>
-        </tr>
+            <td>
+              <input type="radio" name="answer_4" value="evet" id="evet"> 
+              <input type="radio" name="answer_4" value="hayir" id="hayır"> 
+            </td>
+          </tr>
 
-        <tr>
+          <tr>
             <td>Odanın kendi banyosu var.</td>
-            <td>Satır 1, Sütun 2</td>
-            <td>Satır 1, Sütun 3</td>
-        </tr>
+            <td>
+              <input type="radio" name="answer_5" value="evet" id="evet"> 
+              <input type="radio" name="answer_5" value="hayir" id="hayır"> 
+            </td>
+          </tr>
 
-        <tr>
+          <tr>
             <td>Yemek kurum tarafından yapılıyor.</td>
-            <td>Satır 2, Sütun 2</td>
-            <td>Satır 2, Sütun 3</td>
-        </tr>
+            <td>
+              <input type="radio" name="answer_6" value="evet" id="evet"> 
+              <input type="radio" name="answer_6" value="hayir" id="hayır"> 
+            </td>
+          </tr>
 
-        <tr>
+          <tr>
             <td>Giriş çıkış saatleri bana uyuyor.</td>
-            <td>Satır 1, Sütun 2</td>
-            <td>Satır 1, Sütun 3</td>
-        </tr>
+            <td>
+              <input type="radio" name="answer_7" value="evet" id="evet"> 
+              <input type="radio" name="answer_7" value="hayir" id="hayır"> 
+            </td>
+          </tr>
 
-        <tr>
+          <tr>
             <td>Bina girişi güvenli.</td>
-            <td>Satır 2, Sütun 2</td>
-            <td>Satır 2, Sütun 3</td>
-        </tr>
+            <td>
+              <input type="radio" name="answer_8" value="evet" id="evet"> 
+              <input type="radio" name="answer_8" value="hayir" id="hayır"> 
+            </td>
+          </tr>
 
-        <tr>
+          <tr>
             <td>Karşı cins girişi yasak.</td>
-            <td>Satır 1, Sütun 2</td>
-            <td>Satır 1, Sütun 3</td>
-        </tr>
+            <td>
+              <input type="radio" name="answer_9" value="evet" id="evet"> 
+              <input type="radio" name="answer_9" value="hayir" id="hayır"> 
+            </td>
+          </tr>
 
-        <tr>
+          <tr>
             <td>Her katın kendi modemi var./ İnternet sorunu yaşanmıyor.</td>
-            <td>Satır 2, Sütun 2</td>
-            <td>Satır 2, Sütun 3</td>
-        </tr>
+            <td>
+              <input type="radio" name="answer_10" value="evet" id="evet"> 
+              <input type="radio" name="answer_10" value="hayir" id="hayır"> 
+            </td>
+          </tr>
 
-        <tr>
+          <tr>
             <td>Etüt odası bulunuyor.</td>
-            <td>Satır 1, Sütun 2</td>
-            <td>Satır 1, Sütun 3</td>
-        </tr>
+            <td>
+              <input type="radio" name="answer_11" value="evet" id="evet"> 
+              <input type="radio" name="answer_11" value="hayir" id="hayır"> 
+            </td>
+          </tr>
 
-        <tr>
+          <tr>
             <td>Odadaki herkesin masası var.</td>
-            <td>Satır 2, Sütun 2</td>
-            <td>Satır 2, Sütun 3</td>
-        </tr>
+            <td>
+              <input type="radio" name="answer_12" value="evet" id="evet"> 
+              <input type="radio" name="answer_12" value="hayir" id="hayır"> 
+            </td>
+          </tr>
 
-        <tr>
+          <tr>
             <td>Spor odası bulunmakta.</td>
-            <td>Satır 1, Sütun 2</td>
-            <td>Satır 1, Sütun 3</td>
-        </tr>
+            <td>
+              <input type="radio" name="answer_13" value="evet" id="evet"> 
+              <input type="radio" name="answer_13" value="hayir" id="hayır"> 
+            </td>
+          </tr>
 
-        <tr>
+          <tr>
             <td>Ütü bulunuyor.</td>
-            <td>Satır 2, Sütun 2</td>
-            <td>Satır 2, Sütun 3</td>
-        </tr>
+            <td>
+              <input type="radio" name="answer_14" value="evet" id="evet"> 
+              <input type="radio" name="answer_14" value="hayir" id="hayır"> 
+            </td>
+          </tr>
 
-        <tr>
+          <tr>
             <td>Mutfak eşyalarını kullanabiliriz.</td>
-            <td>Satır 1, Sütun 2</td>
-            <td>Satır 1, Sütun 3</td>
-        </tr>
+            <td>
+              <input type="radio" name="answer_15" value="evet" id="evet"> 
+              <input type="radio" name="answer_15" value="hayir" id="hayır"> 
+          </tr>
 
-        <tr>
+          <tr>
             <td>Odalarda/katlarda sebil bulunuyor.</td>
-            <td>Satır 2, Sütun 2</td>
-            <td>Satır 2, Sütun 3</td>
-        </tr>
+            <td>
+              <input type="radio" name="answer_16" value="evet" id="evet"> 
+              <input type="radio" name="answer_16" value="hayir" id="hayır"> 
+            </td>
+          </tr>
 
-        <tr>
+          <tr>
             <td>Oda kapıları kilitlenebiliyor.</td>
-            <td>Satır 1, Sütun 2</td>
-            <td>Satır 1, Sütun 3</td>
-        </tr>
+            <td>
+              <input type="radio" name="answer_17" value="evet" id="evet"> 
+              <input type="radio" name="answer_17" value="hayir" id="hayır"> 
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-    </table>
-    
-
+    <button id="resultButton" class="hidden">Sonuçları Göster</button>
+    <div id="resultText" class="hidden">
+      </div>
+  
+  <script src="yurt secimi.js"></script>
 </body>
-<script src="yurt secimi.js"></script>
 </html>
