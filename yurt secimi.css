@@ -1,6 +1,25 @@
+
 body {
-    font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 200%;
+    background: url(https://img.freepik.com/free-vector/student-dormitory-room-with-bunk-bed-laptop-desk-office-chair-bookshelf-vector-cartoon-interior-empty-dorm-bedroom-hostel-apartment-with-wooden-furniture-backpack_107791-9928.jpg?w=2000) fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-position 10s ease;
+    height: 100%;
+    width: 100%;
+  }
+
+  h1{
+    font-family: 'Lobster', cursive;
+    color: rgb(233, 212, 233);
+    text-shadow:  2px 2px 4px #000000;
     text-align: center;
+    font-size: 200%;
+  }
+
+  body:hover{
+    background-position: right top;
   }
   
   .hidden {
@@ -11,6 +30,13 @@ body {
     width: 50%;
     margin: 20px auto;
     border-collapse: collapse;
+    z-index: 2;
+    backdrop-filter: blur(15px);
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    font-size: 80%;
+    color: #d9bae1;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
   }
   
   table, th, td {
@@ -22,9 +48,18 @@ body {
   }
   
   button {
-    padding: 10px 20px;
+    padding: 30px 60px;
     font-size: 16px;
     margin: 10px;
+    z-index: 2;
+    border-radius: 50%;
+    backdrop-filter: blur(15px);
+    background-color: rgb(227, 179, 245) ;
+    text-shadow:  2px 2px 4px #000000;
+    color: rgb(233, 212, 233);
+    border: none;
+    outline: none;
+    font-family: 'Qwitcher Grypen', cursive;
   }
 
   input[type="radio"]{
@@ -36,7 +71,7 @@ body {
     height: 50px;
     border-radius: 0%;
     border: 1px solid #aeaeae;
-    box-shadow: 2px 2px 5px #aeaeae;
+    box-shadow: 2px 2px 5px #1e1d1d;
     outline: none;
     cursor: pointer;
     display: inline-block;
@@ -58,4 +93,6 @@ body {
     font-size: 200%;
     background-color: #84608d;
     text-shadow: 2px 2px 5px rgb(229, 146, 231);
+    z-index: 2;
+    color: white;
   }
