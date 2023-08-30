@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const radios = document.querySelectorAll(".evet-hayir input[type='radio']:checked");
 
     for (const radio of radios) {
-      const katsayi = parseInt(radio.getAttribute("data-katsayi"));
+      const katsayi = radio.getAttribute("data-katsayi");
       totalScore += katsayi;
     }
 
