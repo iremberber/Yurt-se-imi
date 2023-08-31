@@ -32,11 +32,11 @@ body {
     border-collapse: collapse;
     z-index: 2;
     backdrop-filter: blur(15px);
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto Mono', monospace;
     text-align: center;
     font-size: 80%;
-    color: #ffffff;
-    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    color: #7b098a;
+    text-shadow: 0 0 3px #fec8c8, 0 0 5px #c9c9fa;
   }
   
   table, th, td {
