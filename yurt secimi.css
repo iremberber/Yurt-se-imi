@@ -35,12 +35,12 @@ body {
     font-family: 'Libre Baskerville', serif;
     text-align: center;
     font-size: 80%;
-    color: #d9bae1;
+    color: #ffffff;
     text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
   }
   
   table, th, td {
-    border: 1px solid black;
+    border: 1px solid rgb(188, 134, 204);
   }
   
   th, td {
@@ -78,14 +78,14 @@ body {
   }
 
   input[type="radio"]:hover {
-    background-color: #87f1a7; 
-    border-color: #87f1a7;
-    box-shadow: 2px 2px 5px #167a34;
+    background-color: #c587f1; 
+    border-color: #de87f1;
+    box-shadow: 2px 2px 5px #70167a;
   }
 
   input[type="radio"]:checked {
-    background-color: #28c958; 
-    border-color: #28c958;
+    background-color: #b328c9; 
+    border-color: #be28c9;
   }
  
 

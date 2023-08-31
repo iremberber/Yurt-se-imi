@@ -17,12 +17,19 @@ document.addEventListener("DOMContentLoaded", function () {
   resultButton.addEventListener("click", function () {
     resultButton.classList.add("hidden");
     let totalScore = 0;
-    const radios = document.querySelectorAll(".evet-hayir input[type='radio']:checked");
+    const questionCount = 17;
 
-    for (const radio of radios) {
-      const katsayi = radio.getAttribute("data-katsayi");
-      totalScore += katsayi;
-    }
+   const coefficients = [3, 2, 4, 5, 1, 6, 3, 2, 4, 5, 3, 1, 2, 5, 4, 3, 6];
+
+     for (let i = 1; i <= questionCount; i++) {
+        const selectedValue = document.querySelector('input[name="answer_' + i + '"]:checked');
+        if (selectedValue) {
+          const value = selectedValue.value;
+          if (value === "evet") {
+            totalScore += coefficients[i - 1];
+          }
+        }
+      }
 
     const resultMessage = totalScore > threshold ? "uygun :)" : "uygun değil :(";
     resultText.textContent = `Toplam puan: ${totalScore}. Bizce bu yurt senin için ${resultMessage}`;
@@ -30,3 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
     tableContainer.classList.add("hidden");
   });
 });
+
+
+   
