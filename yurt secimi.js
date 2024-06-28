@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let totalScore = 0;
     const questionCount = 17;
 
-   const coefficients = [3, 2, 4, 5, 1, 6, 3, 2, 4, 5, 3, 1, 2, 5, 4, 3, 6];
+   const coefficients = [6, 4, 8, 10, 3, 12, 6, 4, 6, 6, 6, 4, 10, 5, 2, 3, 5];
 
      for (let i = 1; i <= questionCount; i++) {
         const selectedValue = document.querySelector('input[name="answer_' + i + '"]:checked');
